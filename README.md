@@ -2,6 +2,12 @@
 
 Configs of neovim, fish, zsh, bash and even alacritty which you can fork, use it for yourself as well
 
+## How to get these configs:
+`git clone https://github.com/systemcoding/dotfiles-systemcoding` (Clone it in your home directory) \
+`cp -r dotfiles-systemcoding/file_name .config/` (replace file_name with your preference) \
+For eg: \
+`cp -r dotfiles-systemcoding/.zshrc $HOME` (to copy my zsh config and also install zsh before copying)
+
 # Neovim
 
 * Install Vim Plug for managing plugins (both for neovim and vim) - https://github.com/junegunn/vim-plug
