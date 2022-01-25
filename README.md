@@ -1,6 +1,12 @@
-# **System Coding dotfiles**
+# **System Coding's dotfiles**
 
 Configs of neovim, fish, zsh, bash and even alacritty which you can fork, use it for yourself as well
+
+## How to get these configs:
+`git clone https://github.com/systemcoding/dotfiles-systemcoding` (Clone it in your home directory) \
+`cp -r dotfiles-systemcoding/file_name .config/` (replace file_name with your preference) \
+For eg: \
+`cp -r dotfiles-systemcoding/.zshrc $HOME` (to copy my zsh config and also install zsh before copying)
 
 # Neovim
 
@@ -23,8 +29,11 @@ Plugins I used:
 
 * Make sure you install nodejs to remove the error that you will get when use my config.
 
-***
 # Alacritty
 * Config file (written in yml) - https://github.com/systemcoding/dotfiles-systemcoding/blob/main/.config/alacritty/alacritty.yml
 * Thanks to https://gitlab.com/dwt1 (Distrotube) for the base config
-***
+
+# License
+
+The files and scripts in this repository are licensed under the MIT License, which is a very permissive license allowing you to use, modify, copy, distribute, sell, give away, etc. the software. In other words, do what you want with it. The only requirement with the MIT License is that the license and copyright notice must be provided with the software.
+
