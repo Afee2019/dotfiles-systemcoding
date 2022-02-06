@@ -2,24 +2,32 @@
 call plug#begin()
     Plug 'windwp/nvim-autopairs'
     Plug 'keitokuch/vterm'
+    Plug 'luukvbaal/nnn.nvim'
     Plug 'maxmellon/vim-jsx-pretty'
     Plug 'rakr/vim-one'
     Plug 'yuezk/vim-js'
     Plug 'vimwiki/vimwiki'
-    Plug 'glepnir/dashboard-nvim'
     Plug 'Raimondi/delimitMate'
     Plug 'vim-airline/vim-airline'
-    Plug 'vifm/vifm'
+    Plug 'nvim-telescope/telescope.nvim'
     Plug 'ryanoasis/vim-devicons'
     Plug 'ap/vim-css-color'
-    Plug 'preservim/nerdtree'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " some keybindings
-nmap <F5> :NERDTree<CR>
+" Disable default mappings
+let g:nnn#set_default_mappings = 0
+
+" Then set your own
+nnoremap <silent> <leader>nn :NnnPicker<CR>
+
+
+" Or override
+" Start nnn in the current file's directory
+nmap <F5> :Explore<CR>
 nnoremap <silent> <C-f> :Files<CR>
 
 set background=dark
@@ -70,15 +78,6 @@ hi SpellBad cterm=underline ctermfg=203 guifg=#ff5f5f
 hi SpellLocal cterm=underline ctermfg=203 guifg=#ff5f5f
 hi SpellRare cterm=underline ctermfg=203 guifg=#ff5f5f
 hi SpellCap cterm=underline ctermfg=203 guifg=#ff5f5f
-
-" file manager settings
-let g:netrw_banner=0
-let g:netrw_liststyle=0
-let g:netrw_browse_split=4
-let g:netrw_altv=1
-let g:netrw_winsize=25
-let g:netrw_keepdir=0
-let g:netrw_localcopydircmd='cp -r'
 
 " jsx
 let g:jsx_ext_required = 0
