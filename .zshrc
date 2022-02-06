@@ -58,8 +58,6 @@ plugins=(
    zsh-autosuggestions
 )
 
-echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -87,7 +85,8 @@ alias config="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME" # for ba
 alias exa="la -lah"
 alias TERM="xterm-256color"
 alias cls="clear"
+# You need to have nnn installed (Eg: sudo apt install nnn)
+alias nnn="n"
 
 eval "$(starship init zsh)"
-source /home/revanth/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/revanth/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
